@@ -126,5 +126,5 @@ If you use this code for your research, please cite:
 
 ```
 Jeremy McMahan. (2025). Anytime-Constrained Reinforcement Learning. 
-GitHub Repository. [https://github.com/jermcmahan/Anytime-CRL](https://github.com/jermcmahan/Anytime-CRL)
+GitHub Repository. https://github.com/jermcmahan/Anytime-CRL
 ```
