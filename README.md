@@ -8,7 +8,7 @@ The companion code to the AISTATs paper [Anytime-Constrained Reinforcement Learn
 
 * **Algorithmic Suite:**
 
-    * Reduction Solver: An exact, pseudo-polynomial time solver using specialized state augmentation.
+    * Reduction Solver: An exact, pseudo-polynomial time solver using specialized state augmentation. Allows rational and negative costs!
 
     * Approximation Solver: A bicriteria (0,1+ϵ)-approximation algorithm that guarantees value optimality while bounding cost violation.
 
@@ -126,5 +126,5 @@ If you use this code for your research, please cite:
 
 ```
 Jeremy McMahan. (2025). Anytime-Constrained Reinforcement Learning. 
-GitHub Repository. https://github.com/jermcmahan/Anytime-CRL
+GitHub Repository. [https://github.com/jermcmahan/Anytime-CRL](https://github.com/jermcmahan/Anytime-CRL)
 ```

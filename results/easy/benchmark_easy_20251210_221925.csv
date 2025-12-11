@@ -1,0 +1,701 @@
+algorithm,time,value,cost,budget,horizon,policy_found,timestamp,dataset_path,instance_id
+Reduction,0.0022698340471833944,1.0,1.0,1,10,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=1.0),0.0019653328927233815,1.0,1.0,1,10,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.5),0.0017728330567479134,1.0,1.0,1,10,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.25),0.001803375082090497,1.0,1.0,1,10,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=1.0),0.0009547079680487514,0.0,0.0,1,10,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.5),0.0009372500935569406,0.0,0.0,1,10,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.25),0.0009459580760449171,0.0,0.0,1,10,True,20251210_221925,data/easy,instance_000
+Reduction,0.001159333041869104,2.0,2.0,2,10,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=1.0),0.002191165927797556,2.0,2.0,2,10,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.5),0.002393707982264459,2.0,2.0,2,10,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.25),0.002145958016626537,2.0,2.0,2,10,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=1.0),0.0017852080054581165,1.0,1.0,2,10,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.5),0.0017839170759543777,1.0,1.0,2,10,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.25),0.002149375039152801,1.0,1.0,2,10,True,20251210_221925,data/easy,instance_001
+Reduction,0.0014379170024767518,3.0,3.0,3,10,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=1.0),0.002217500004917383,3.0,3.0,3,10,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.5),0.002280041924677789,3.0,3.0,3,10,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.25),0.002273582969792187,3.0,3.0,3,10,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=1.0),0.0017905829008668661,1.0,1.0,3,10,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.5),0.001987416995689273,2.0,2.0,3,10,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.25),0.0019590839510783553,2.0,2.0,3,10,True,20251210_221925,data/easy,instance_002
+Reduction,0.0014484579442068934,4.0,4.0,4,10,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=1.0),0.002567749936133623,5.0,5.0,4,10,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.5),0.0023060839157551527,4.0,4.0,4,10,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.25),0.0024560419842600822,4.0,4.0,4,10,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=1.0),0.002181708929128945,2.0,2.0,4,10,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.5),0.0019817909924313426,2.0,2.0,4,10,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.25),0.002185416058637202,3.0,3.0,4,10,True,20251210_221925,data/easy,instance_003
+Reduction,0.0014534590300172567,5.0,5.0,5,10,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=1.0),0.0024812499759718776,5.0,5.0,5,10,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.5),0.0024707920383661985,5.0,5.0,5,10,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.25),0.0025827089557424188,5.0,5.0,5,10,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=1.0),0.0019814579281955957,2.0,2.0,5,10,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.5),0.0021554999984800816,3.0,3.0,5,10,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.25),0.0023209579521790147,4.0,4.0,5,10,True,20251210_221925,data/easy,instance_004
+Reduction,0.00155391707085073,6.0,6.0,6,10,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=1.0),0.0032698329305276275,10.0,10.0,6,10,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.5),0.0026522079715505242,6.0,6.0,6,10,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.25),0.0027955000987276435,6.0,6.0,6,10,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=1.0),0.0023010410368442535,3.0,3.0,6,10,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.5),0.002347166067920625,4.0,4.0,6,10,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.25),0.0022910410771146417,4.0,4.0,6,10,True,20251210_221925,data/easy,instance_005
+Reduction,0.0017525000730529428,7.0,7.0,7,10,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=1.0),0.0033662919886410236,10.0,10.0,7,10,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.5),0.0033476250246167183,10.0,10.0,7,10,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.25),0.002986249979585409,8.0,8.0,7,10,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=1.0),0.0021835409570485353,3.0,3.0,7,10,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.5),0.002308333059772849,4.0,4.0,7,10,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.25),0.0024915419053286314,5.0,5.0,7,10,True,20251210_221925,data/easy,instance_006
+Reduction,0.0017074160277843475,8.0,8.0,8,10,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=1.0),0.0032288749935105443,10.0,10.0,8,10,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.5),0.003457042039372027,10.0,10.0,8,10,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.25),0.002931291004642844,8.0,8.0,8,10,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=1.0),0.002481917035765946,5.0,5.0,8,10,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.5),0.0024739170912653208,5.0,5.0,8,10,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.25),0.0026547079905867577,6.0,6.0,8,10,True,20251210_221925,data/easy,instance_007
+Reduction,0.0017800000496208668,9.0,9.0,9,10,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=1.0),0.0033701659413054585,10.0,10.0,9,10,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.5),0.003242374979890883,10.0,10.0,9,10,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.25),0.0031652909237891436,10.0,10.0,9,10,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=1.0),0.002465749974362552,5.0,5.0,9,10,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.5),0.0028410409577190876,6.0,6.0,9,10,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.25),0.0029751670081168413,8.0,8.0,9,10,True,20251210_221925,data/easy,instance_008
+Reduction,0.0021172090200707316,10.0,10.0,10,10,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=1.0),0.003271374967880547,10.0,10.0,10,10,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.5),0.003202624968253076,10.0,10.0,10,10,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.25),0.0031981250504031777,10.0,10.0,10,10,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=1.0),0.0024883330333977938,5.0,5.0,10,10,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.5),0.0027549590449780226,6.0,6.0,10,10,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.25),0.002958625089377165,8.0,8.0,10,10,True,20251210_221925,data/easy,instance_009
+Reduction,0.0036342910025268793,11.0,11.0,11,20,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=1.0),0.007726458017714322,20.0,20.0,11,20,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.5),0.006358749931678176,13.0,13.0,11,20,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.25),0.006149583030492067,11.0,11.0,11,20,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=1.0),0.004503791918978095,5.0,5.0,11,20,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.5),0.005340166972018778,8.0,8.0,11,20,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.25),0.005489374976605177,8.0,8.0,11,20,True,20251210_221925,data/easy,instance_000
+Reduction,0.003867125022225082,12.0,12.0,12,20,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=1.0),0.0073579170275479555,20.0,20.0,12,20,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.5),0.006604708964005113,13.0,13.0,12,20,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.25),0.0062151249730959535,13.0,13.0,12,20,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=1.0),0.004838917055167258,6.0,6.0,12,20,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.5),0.005182208027690649,8.0,8.0,12,20,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.25),0.005851584021002054,10.0,10.0,12,20,True,20251210_221925,data/easy,instance_001
+Reduction,0.004182790988124907,13.0,13.0,13,20,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=1.0),0.0074624159606173635,20.0,20.0,13,20,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.5),0.006426125066354871,13.0,13.0,13,20,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.25),0.006196166970767081,13.0,13.0,13,20,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=1.0),0.005103458999656141,6.0,6.0,13,20,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.5),0.005163458059541881,8.0,8.0,13,20,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.25),0.005620499956421554,10.0,10.0,13,20,True,20251210_221925,data/easy,instance_002
+Reduction,0.003979708068072796,14.0,14.0,14,20,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=1.0),0.007345041958615184,20.0,20.0,14,20,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.5),0.007244416978210211,20.0,20.0,14,20,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.25),0.007313166977837682,16.0,16.0,14,20,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=1.0),0.005999875022098422,10.0,10.0,14,20,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.5),0.005989000084809959,10.0,10.0,14,20,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.25),0.005939000053331256,11.0,11.0,14,20,True,20251210_221925,data/easy,instance_003
+Reduction,0.004252624930813909,15.0,15.0,15,20,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=1.0),0.007625750033184886,20.0,20.0,15,20,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.5),0.007524540997110307,20.0,20.0,15,20,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.25),0.006751082953996956,16.0,16.0,15,20,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=1.0),0.005600749980658293,10.0,10.0,15,20,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.5),0.00558616709895432,10.0,10.0,15,20,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.25),0.006534749991260469,13.0,13.0,15,20,True,20251210_221925,data/easy,instance_004
+Reduction,0.004241375019773841,16.0,16.0,16,20,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=1.0),0.007396667031571269,20.0,20.0,16,20,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.5),0.007339583011344075,20.0,20.0,16,20,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.25),0.006651874980889261,16.0,16.0,16,20,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=1.0),0.005754708079621196,10.0,10.0,16,20,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.5),0.005639749928377569,10.0,10.0,16,20,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.25),0.0065897919703274965,13.0,13.0,16,20,True,20251210_221925,data/easy,instance_005
+Reduction,0.004377458011731505,17.0,17.0,17,20,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=1.0),0.007702540955506265,20.0,20.0,17,20,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.5),0.007367124897427857,20.0,20.0,17,20,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.25),0.007692374987527728,20.0,20.0,17,20,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=1.0),0.005950208054855466,10.0,10.0,17,20,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.5),0.006574374972842634,13.0,13.0,17,20,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.25),0.006727250060066581,13.0,13.0,17,20,True,20251210_221925,data/easy,instance_006
+Reduction,0.004507291945628822,18.0,18.0,18,20,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=1.0),0.007555917021818459,20.0,20.0,18,20,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.5),0.00764804205391556,20.0,20.0,18,20,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.25),0.007486791932024062,20.0,20.0,18,20,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=1.0),0.005693208076991141,10.0,10.0,18,20,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.5),0.006460750009864569,13.0,13.0,18,20,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.25),0.006806291057728231,16.0,16.0,18,20,True,20251210_221925,data/easy,instance_007
+Reduction,0.004571917001157999,19.0,19.0,19,20,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=1.0),0.007405375014059246,20.0,20.0,19,20,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.5),0.00724045792594552,20.0,20.0,19,20,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.25),0.007474791957065463,20.0,20.0,19,20,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=1.0),0.005669416976161301,10.0,10.0,19,20,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.5),0.00658012495841831,13.0,13.0,19,20,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.25),0.006858124979771674,16.0,16.0,19,20,True,20251210_221925,data/easy,instance_008
+Reduction,0.004378417041152716,20.0,20.0,20,20,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=1.0),0.007380540948361158,20.0,20.0,20,20,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.5),0.007670666906051338,20.0,20.0,20,20,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.25),0.007604124955832958,20.0,20.0,20,20,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=1.0),0.0057229159865528345,10.0,10.0,20,20,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.5),0.006344125024043024,13.0,13.0,20,20,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.25),0.006959874997846782,16.0,16.0,20,20,True,20251210_221925,data/easy,instance_009
+Reduction,0.0070933750830590725,21.0,21.0,21,30,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=1.0),0.012741457903757691,30.0,30.0,21,30,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.5),0.012923958012834191,30.0,30.0,21,30,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.25),0.012465667095966637,24.0,24.0,21,30,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=1.0),0.008512833039276302,10.0,10.0,21,30,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.5),0.009536124998703599,15.0,15.0,21,30,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.25),0.010167709086090326,17.0,17.0,21,30,True,20251210_221925,data/easy,instance_000
+Reduction,0.006947250105440617,22.0,22.0,22,30,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=1.0),0.012522124918177724,30.0,30.0,22,30,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.5),0.013145500095561147,30.0,30.0,22,30,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.25),0.0118228750070557,24.0,24.0,22,30,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=1.0),0.00953399995341897,15.0,15.0,22,30,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.5),0.009772000019438565,15.0,15.0,22,30,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.25),0.010212042019702494,17.0,17.0,22,30,True,20251210_221925,data/easy,instance_001
+Reduction,0.006930708070285618,23.0,23.0,23,30,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=1.0),0.013117708964273334,29.0,29.0,23,30,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.5),0.013020250014960766,29.0,29.0,23,30,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.25),0.012089833966456354,23.0,23.0,23,30,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=1.0),0.010082374908961356,15.0,15.0,23,30,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.5),0.00974916701670736,15.0,15.0,23,30,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.25),0.010755875031463802,20.0,20.0,23,30,True,20251210_221925,data/easy,instance_002
+Reduction,0.007117750006727874,24.0,24.0,24,30,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=1.0),0.012602332979440689,30.0,30.0,24,30,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.5),0.012492542038671672,30.0,30.0,24,30,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.25),0.012123874970711768,24.0,24.0,24,30,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=1.0),0.009820125065743923,15.0,15.0,24,30,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.5),0.01075983396731317,20.0,20.0,24,30,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.25),0.011027583037503064,20.0,20.0,24,30,True,20251210_221925,data/easy,instance_003
+Reduction,0.007226500078104436,25.0,25.0,25,30,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=1.0),0.012591416016221046,30.0,30.0,25,30,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.5),0.012886375072412193,30.0,30.0,25,30,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.25),0.013465916039422154,30.0,30.0,25,30,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=1.0),0.009592375019565225,15.0,15.0,25,30,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.5),0.01124112494289875,20.0,20.0,25,30,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.25),0.011381959076970816,20.0,20.0,25,30,True,20251210_221925,data/easy,instance_004
+Reduction,0.007278166012838483,26.0,26.0,26,30,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=1.0),0.012944958987645805,30.0,30.0,26,30,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.5),0.013031915994361043,30.0,30.0,26,30,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.25),0.012721874983981252,30.0,30.0,26,30,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=1.0),0.00966524996329099,15.0,15.0,26,30,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.5),0.011295042000710964,20.0,20.0,26,30,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.25),0.010694665950722992,20.0,20.0,26,30,True,20251210_221925,data/easy,instance_005
+Reduction,0.0077382499584928155,27.0,27.0,27,30,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=1.0),0.013297250028699636,30.0,30.0,27,30,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.5),0.013149249949492514,30.0,30.0,27,30,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.25),0.013207333977334201,30.0,30.0,27,30,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=1.0),0.009713875013403594,15.0,15.0,27,30,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.5),0.01068170799408108,20.0,20.0,27,30,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.25),0.011572624905966222,24.0,24.0,27,30,True,20251210_221925,data/easy,instance_006
+Reduction,0.007447583950124681,28.0,28.0,28,30,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=1.0),0.01249312493018806,30.0,30.0,28,30,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.5),0.012513124966062605,30.0,30.0,28,30,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.25),0.012393749901093543,30.0,30.0,28,30,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=1.0),0.009390040999278426,15.0,15.0,28,30,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.5),0.010752290952950716,20.0,20.0,28,30,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.25),0.011527084046974778,24.0,24.0,28,30,True,20251210_221925,data/easy,instance_007
+Reduction,0.00746254192199558,29.0,29.0,29,30,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=1.0),0.012469165958464146,30.0,30.0,29,30,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.5),0.012402625055983663,30.0,30.0,29,30,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.25),0.01269016694277525,30.0,30.0,29,30,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=1.0),0.009468375006690621,15.0,15.0,29,30,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.5),0.010693666990846395,20.0,20.0,29,30,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.25),0.011283667059615254,23.0,23.0,29,30,True,20251210_221925,data/easy,instance_008
+Reduction,0.007553124916739762,30.0,30.0,30,30,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=1.0),0.012381667038425803,30.0,30.0,30,30,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.5),0.012374707963317633,30.0,30.0,30,30,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.25),0.01239950000308454,30.0,30.0,30,30,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=1.0),0.009491916978731751,15.0,15.0,30,30,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.5),0.010584667092189193,20.0,20.0,30,30,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.25),0.011517665931023657,24.0,24.0,30,30,True,20251210_221925,data/easy,instance_009
+Reduction,0.011070791049860418,31.0,31.0,31,40,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=1.0),0.019291959004476666,40.0,40.0,31,40,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.5),0.01935891609173268,40.0,40.0,31,40,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.25),0.017803999944590032,32.0,32.0,31,40,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=1.0),0.014553666929714382,20.0,20.0,31,40,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.5),0.014514417038299143,20.0,20.0,31,40,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.25),0.016343625029549003,26.0,26.0,31,40,True,20251210_221925,data/easy,instance_000
+Reduction,0.01105237496085465,32.0,32.0,32,40,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=1.0),0.019046499975956976,40.0,40.0,32,40,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.5),0.01922245800960809,40.0,40.0,32,40,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.25),0.017612041905522346,32.0,32.0,32,40,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=1.0),0.014563541044481099,20.0,20.0,32,40,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.5),0.01622783299535513,26.0,26.0,32,40,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.25),0.016340874950401485,26.0,26.0,32,40,True,20251210_221925,data/easy,instance_001
+Reduction,0.01109366596210748,33.0,33.0,33,40,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=1.0),0.019198167021386325,40.0,40.0,33,40,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.5),0.020002042059786618,40.0,40.0,33,40,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.25),0.019275167025625706,40.0,40.0,33,40,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=1.0),0.014525040984153748,20.0,20.0,33,40,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.5),0.016402709065005183,26.0,26.0,33,40,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.25),0.01623237505555153,26.0,26.0,33,40,True,20251210_221925,data/easy,instance_002
+Reduction,0.011321916012093425,34.0,34.0,34,40,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=1.0),0.01909929094836116,40.0,40.0,34,40,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.5),0.019282542052678764,40.0,40.0,34,40,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.25),0.019024083041585982,40.0,40.0,34,40,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=1.0),0.01514274999499321,20.0,20.0,34,40,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.5),0.017798374989069998,26.0,26.0,34,40,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.25),0.01837204210460186,32.0,32.0,34,40,True,20251210_221925,data/easy,instance_003
+Reduction,0.012518999981693923,35.0,35.0,35,40,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=1.0),0.0198648750083521,40.0,40.0,35,40,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.5),0.019068124936893582,40.0,40.0,35,40,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.25),0.019014375051483512,40.0,40.0,35,40,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=1.0),0.01443091593682766,20.0,20.0,35,40,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.5),0.01617170893587172,26.0,26.0,35,40,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.25),0.017554291989654303,32.0,32.0,35,40,True,20251210_221925,data/easy,instance_004
+Reduction,0.011353167006745934,36.0,36.0,36,40,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=1.0),0.019089957932010293,40.0,40.0,36,40,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.5),0.020101457950659096,40.0,40.0,36,40,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.25),0.01925620809197426,40.0,40.0,36,40,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=1.0),0.014485207968391478,20.0,20.0,36,40,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.5),0.01630033296532929,26.0,26.0,36,40,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.25),0.01758500002324581,32.0,32.0,36,40,True,20251210_221925,data/easy,instance_005
+Reduction,0.011541625019162893,37.0,37.0,37,40,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=1.0),0.01907204103190452,40.0,40.0,37,40,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.5),0.019219583948142827,40.0,40.0,37,40,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.25),0.019108208012767136,40.0,40.0,37,40,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=1.0),0.014458665973506868,20.0,20.0,37,40,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.5),0.016246207989752293,26.0,26.0,37,40,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.25),0.01762441697064787,32.0,32.0,37,40,True,20251210_221925,data/easy,instance_006
+Reduction,0.01167891698423773,38.0,38.0,38,40,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=1.0),0.019003957975655794,40.0,40.0,38,40,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.5),0.02009808295406401,40.0,40.0,38,40,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.25),0.01934658398386091,40.0,40.0,38,40,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=1.0),0.0146229169331491,20.0,20.0,38,40,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.5),0.016427417052909732,26.0,26.0,38,40,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.25),0.017620000056922436,32.0,32.0,38,40,True,20251210_221925,data/easy,instance_007
+Reduction,0.011715249973349273,39.0,39.0,39,40,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=1.0),0.019169208011589944,40.0,40.0,39,40,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.5),0.019369375077076256,40.0,40.0,39,40,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.25),0.0192037500673905,40.0,40.0,39,40,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=1.0),0.014828999992460012,20.0,20.0,39,40,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.5),0.01704295794479549,26.0,26.0,39,40,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.25),0.018405582988634706,32.0,32.0,39,40,True,20251210_221925,data/easy,instance_008
+Reduction,0.01244716695509851,40.0,40.0,40,40,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=1.0),0.019307416980154812,40.0,40.0,40,40,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.5),0.019316624966450036,40.0,40.0,40,40,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.25),0.019284166977740824,40.0,40.0,40,40,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=1.0),0.014514790964312851,20.0,20.0,40,40,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.5),0.016886624973267317,26.0,26.0,40,40,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.25),0.018407749943435192,32.0,32.0,40,40,True,20251210_221925,data/easy,instance_009
+Reduction,0.01642487500794232,41.0,41.0,41,50,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=1.0),0.027911624987609684,50.0,50.0,41,50,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.5),0.027430040994659066,50.0,50.0,41,50,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.25),0.027200500015169382,50.0,50.0,41,50,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=1.0),0.020847792038694024,25.0,25.0,41,50,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.5),0.023648709058761597,33.0,33.0,41,50,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.25),0.023570624995045364,33.0,33.0,41,50,True,20251210_221925,data/easy,instance_000
+Reduction,0.016206709085963666,42.0,42.0,42,50,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=1.0),0.027503999997861683,50.0,50.0,42,50,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.5),0.027268707985058427,50.0,50.0,42,50,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.25),0.027491291984915733,50.0,50.0,42,50,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=1.0),0.021255375002510846,25.0,25.0,42,50,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.5),0.023671334027312696,33.0,33.0,42,50,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.25),0.023711292073130608,33.0,33.0,42,50,True,20251210_221925,data/easy,instance_001
+Reduction,0.016393332974985242,43.0,43.0,43,50,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=1.0),0.027639875072054565,50.0,50.0,43,50,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.5),0.027213374967686832,50.0,50.0,43,50,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.25),0.027461042045615613,50.0,50.0,43,50,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=1.0),0.02161816693842411,25.0,25.0,43,50,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.5),0.02478837501257658,33.0,33.0,43,50,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.25),0.025709458044730127,39.0,39.0,43,50,True,20251210_221925,data/easy,instance_002
+Reduction,0.016498166020028293,44.0,44.0,44,50,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=1.0),0.027752332971431315,50.0,50.0,44,50,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.5),0.027239541057497263,50.0,50.0,44,50,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.25),0.02712666697334498,50.0,50.0,44,50,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=1.0),0.020575957954861224,25.0,25.0,44,50,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.5),0.023536291904747486,33.0,33.0,44,50,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.25),0.02520575001835823,40.0,40.0,44,50,True,20251210_221925,data/easy,instance_003
+Reduction,0.016506167012266815,45.0,45.0,45,50,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=1.0),0.02756654191762209,50.0,50.0,45,50,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.5),0.027229875093325973,50.0,50.0,45,50,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.25),0.027211416978389025,50.0,50.0,45,50,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=1.0),0.020556417061015964,25.0,25.0,45,50,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.5),0.023523832904174924,33.0,33.0,45,50,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.25),0.025174667011015117,40.0,40.0,45,50,True,20251210_221925,data/easy,instance_004
+Reduction,0.016679542022757232,46.0,46.0,46,50,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=1.0),0.027573750005103648,50.0,50.0,46,50,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.5),0.0272075830725953,50.0,50.0,46,50,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.25),0.027304042014293373,50.0,50.0,46,50,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=1.0),0.020575292059220374,25.0,25.0,46,50,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.5),0.023445957922376692,33.0,33.0,46,50,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.25),0.025241583003662527,40.0,40.0,46,50,True,20251210_221925,data/easy,instance_005
+Reduction,0.016724708024412394,47.0,47.0,47,50,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=1.0),0.027623332920484245,50.0,50.0,47,50,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.5),0.02849779196549207,50.0,50.0,47,50,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.25),0.027514416025951505,50.0,50.0,47,50,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=1.0),0.020707292016595602,25.0,25.0,47,50,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.5),0.023539875051937997,33.0,33.0,47,50,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.25),0.02520720800384879,40.0,40.0,47,50,True,20251210_221925,data/easy,instance_006
+Reduction,0.017382874968461692,48.0,48.0,48,50,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=1.0),0.02882974990643561,50.0,50.0,48,50,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.5),0.027583832968957722,50.0,50.0,48,50,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.25),0.027398207923397422,50.0,50.0,48,50,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=1.0),0.02066116698551923,25.0,25.0,48,50,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.5),0.023620749940164387,33.0,33.0,48,50,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.25),0.025290083955042064,40.0,40.0,48,50,True,20251210_221925,data/easy,instance_007
+Reduction,0.01703804195858538,49.0,49.0,49,50,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=1.0),0.02758904197253287,50.0,50.0,49,50,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.5),0.02718212502077222,50.0,50.0,49,50,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.25),0.027341415989212692,50.0,50.0,49,50,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=1.0),0.020677749998867512,25.0,25.0,49,50,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.5),0.023532207938842475,33.0,33.0,49,50,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.25),0.025233083055354655,40.0,40.0,49,50,True,20251210_221925,data/easy,instance_008
+Reduction,0.017061584047041833,50.0,50.0,50,50,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=1.0),0.03230154199991375,50.0,50.0,50,50,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.5),0.028713541920296848,50.0,50.0,50,50,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.25),0.02753162500448525,50.0,50.0,50,50,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=1.0),0.02067537500988692,25.0,25.0,50,50,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.5),0.024198958999477327,33.0,33.0,50,50,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.25),0.025597000028938055,40.0,40.0,50,50,True,20251210_221925,data/easy,instance_009
+Reduction,0.02274341695010662,51.0,51.0,51,60,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=1.0),0.037711917073465884,60.0,60.0,51,60,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.5),0.03852070798166096,60.0,60.0,51,60,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.25),0.038758791983127594,60.0,60.0,51,60,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=1.0),0.028747124946676195,30.0,30.0,51,60,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.5),0.032267083995975554,40.0,40.0,51,60,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.25),0.03253429103642702,40.0,40.0,51,60,True,20251210_221925,data/easy,instance_000
+Reduction,0.023490040912292898,52.0,52.0,52,60,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=1.0),0.038858374929986894,60.0,60.0,52,60,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.5),0.03755391703452915,60.0,60.0,52,60,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.25),0.03738008299842477,60.0,60.0,52,60,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=1.0),0.02818120806477964,30.0,30.0,52,60,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.5),0.03239633294288069,40.0,40.0,52,60,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.25),0.03486916597466916,48.0,48.0,52,60,True,20251210_221925,data/easy,instance_001
+Reduction,0.023797083063982427,53.0,53.0,53,60,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=1.0),0.039723790949210525,60.0,60.0,53,60,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.5),0.0383306669536978,60.0,60.0,53,60,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.25),0.03830054204445332,60.0,60.0,53,60,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=1.0),0.02915125002618879,30.0,30.0,53,60,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.5),0.03216154198162258,39.0,39.0,53,60,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.25),0.03514662501402199,48.0,48.0,53,60,True,20251210_221925,data/easy,instance_002
+Reduction,0.023178374976851046,54.0,54.0,54,60,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=1.0),0.03805904102046043,60.0,60.0,54,60,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.5),0.03810279106255621,60.0,60.0,54,60,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.25),0.03955841704737395,60.0,60.0,54,60,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=1.0),0.0294671660521999,30.0,30.0,54,60,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.5),0.033381582936272025,40.0,40.0,54,60,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.25),0.03497054195031524,48.0,48.0,54,60,True,20251210_221925,data/easy,instance_003
+Reduction,0.02342258405406028,55.0,55.0,55,60,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=1.0),0.038516708998940885,60.0,60.0,55,60,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.5),0.038579334039241076,60.0,60.0,55,60,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.25),0.037786625092849135,60.0,60.0,55,60,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=1.0),0.02896966692060232,30.0,30.0,55,60,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.5),0.03235629200935364,40.0,40.0,55,60,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.25),0.034865583991631866,48.0,48.0,55,60,True,20251210_221925,data/easy,instance_004
+Reduction,0.02351362502668053,56.0,56.0,56,60,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=1.0),0.03775470901746303,60.0,60.0,56,60,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.5),0.03744362504221499,60.0,60.0,56,60,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.25),0.038589041912928224,60.0,60.0,56,60,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=1.0),0.028235208010300994,30.0,30.0,56,60,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.5),0.03266866598278284,40.0,40.0,56,60,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.25),0.036017625010572374,48.0,48.0,56,60,True,20251210_221925,data/easy,instance_005
+Reduction,0.02365724998526275,57.0,57.0,57,60,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=1.0),0.037767917034216225,60.0,60.0,57,60,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.5),0.03761649993248284,60.0,60.0,57,60,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.25),0.03730354190338403,60.0,60.0,57,60,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=1.0),0.028237042017281055,30.0,30.0,57,60,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.5),0.032273625023663044,40.0,40.0,57,60,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.25),0.035103000001981854,48.0,48.0,57,60,True,20251210_221925,data/easy,instance_006
+Reduction,0.024087750003673136,58.0,58.0,58,60,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=1.0),0.03801241598557681,60.0,60.0,58,60,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.5),0.03749587491620332,60.0,60.0,58,60,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.25),0.03730104095302522,60.0,60.0,58,60,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=1.0),0.028106915997341275,30.0,30.0,58,60,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.5),0.0323034169850871,40.0,40.0,58,60,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.25),0.03462579206097871,47.0,47.0,58,60,True,20251210_221925,data/easy,instance_007
+Reduction,0.02363750000949949,59.0,59.0,59,60,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=1.0),0.037709416006691754,60.0,60.0,59,60,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.5),0.03755370795261115,60.0,60.0,59,60,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.25),0.037313500070013106,60.0,60.0,59,60,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=1.0),0.0280305000487715,30.0,30.0,59,60,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.5),0.03207033302169293,40.0,40.0,59,60,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.25),0.034677708987146616,48.0,48.0,59,60,True,20251210_221925,data/easy,instance_008
+Reduction,0.023715208983048797,60.0,60.0,60,60,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=1.0),0.03764912497717887,60.0,60.0,60,60,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.5),0.03746808390133083,60.0,60.0,60,60,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.25),0.03855295805260539,60.0,60.0,60,60,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=1.0),0.028307041036896408,30.0,30.0,60,60,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.5),0.03227270802017301,40.0,40.0,60,60,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.25),0.03468945901840925,48.0,48.0,60,60,True,20251210_221925,data/easy,instance_009
+Reduction,0.030934125068597496,61.0,61.0,61,70,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=1.0),0.05026749998796731,70.0,70.0,61,70,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.5),0.049886375083588064,70.0,70.0,61,70,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.25),0.04976099997293204,70.0,70.0,61,70,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=1.0),0.03724524995777756,35.0,35.0,61,70,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.5),0.04287137498613447,46.0,46.0,61,70,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.25),0.04657449992373586,56.0,56.0,61,70,True,20251210_221925,data/easy,instance_000
+Reduction,0.0312606249935925,62.0,62.0,62,70,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=1.0),0.05403925001155585,70.0,70.0,62,70,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.5),0.05101208295673132,70.0,70.0,62,70,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.25),0.050116625032387674,70.0,70.0,62,70,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=1.0),0.03723212506156415,35.0,35.0,62,70,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.5),0.04303266596980393,46.0,46.0,62,70,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.25),0.04654837504494935,56.0,56.0,62,70,True,20251210_221925,data/easy,instance_001
+Reduction,0.03171308396849781,63.0,63.0,63,70,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=1.0),0.05080412491224706,70.0,70.0,63,70,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.5),0.05004858400207013,70.0,70.0,63,70,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.25),0.05008237494621426,70.0,70.0,63,70,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=1.0),0.03729187499266118,35.0,35.0,63,70,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.5),0.04291716602165252,46.0,46.0,63,70,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.25),0.04660395800601691,56.0,56.0,63,70,True,20251210_221925,data/easy,instance_002
+Reduction,0.04047870892100036,64.0,64.0,64,70,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=1.0),0.05028954101726413,70.0,70.0,64,70,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.5),0.049970791093073785,70.0,70.0,64,70,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.25),0.04988825006876141,70.0,70.0,64,70,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=1.0),0.03728762501850724,35.0,35.0,64,70,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.5),0.04284066706895828,46.0,46.0,64,70,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.25),0.04657283297274262,56.0,56.0,64,70,True,20251210_221925,data/easy,instance_003
+Reduction,0.031393084092997015,65.0,65.0,65,70,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=1.0),0.05031425005290657,70.0,70.0,65,70,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.5),0.049987750011496246,70.0,70.0,65,70,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.25),0.0513187499018386,70.0,70.0,65,70,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=1.0),0.0378807500237599,35.0,35.0,65,70,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.5),0.04315287503413856,46.0,46.0,65,70,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.25),0.04683233401738107,56.0,56.0,65,70,True,20251210_221925,data/easy,instance_004
+Reduction,0.031485832994803786,66.0,66.0,66,70,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=1.0),0.05045849992893636,70.0,70.0,66,70,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.5),0.050089625059626997,70.0,70.0,66,70,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.25),0.050107166985981166,70.0,70.0,66,70,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=1.0),0.03728416690137237,35.0,35.0,66,70,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.5),0.043108707992359996,46.0,46.0,66,70,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.25),0.046811875072307885,56.0,56.0,66,70,True,20251210_221925,data/easy,instance_005
+Reduction,0.03159820905420929,67.0,67.0,67,70,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=1.0),0.05033516592811793,70.0,70.0,67,70,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.5),0.049929625005461276,70.0,70.0,67,70,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.25),0.05123995908070356,70.0,70.0,67,70,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=1.0),0.03751645900774747,35.0,35.0,67,70,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.5),0.04314266692381352,46.0,46.0,67,70,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.25),0.04680487501900643,56.0,56.0,67,70,True,20251210_221925,data/easy,instance_006
+Reduction,0.03169845906086266,68.0,68.0,68,70,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=1.0),0.050223666010424495,70.0,70.0,68,70,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.5),0.05024012492503971,70.0,70.0,68,70,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.25),0.04992570902686566,70.0,70.0,68,70,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=1.0),0.037522500031627715,35.0,35.0,68,70,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.5),0.04307370900642127,46.0,46.0,68,70,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.25),0.04667625005822629,56.0,56.0,68,70,True,20251210_221925,data/easy,instance_007
+Reduction,0.03175808396190405,69.0,69.0,69,70,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=1.0),0.05022374994587153,70.0,70.0,69,70,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.5),0.050896417000330985,70.0,70.0,69,70,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.25),0.05077137495391071,70.0,70.0,69,70,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=1.0),0.037985416944138706,35.0,35.0,69,70,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.5),0.043420250061899424,46.0,46.0,69,70,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.25),0.04899508296512067,56.0,56.0,69,70,True,20251210_221925,data/easy,instance_008
+Reduction,0.03219545795582235,70.0,70.0,70,70,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=1.0),0.05046741699334234,70.0,70.0,70,70,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.5),0.05003337503876537,70.0,70.0,70,70,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.25),0.05002645798958838,70.0,70.0,70,70,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=1.0),0.037318416056223214,35.0,35.0,70,70,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.5),0.043040874996222556,46.0,46.0,70,70,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.25),0.0465171670075506,56.0,56.0,70,70,True,20251210_221925,data/easy,instance_009
+Reduction,0.04095408401917666,71.0,71.0,71,80,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=1.0),0.0652937499107793,80.0,80.0,71,80,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.5),0.06503108399920166,80.0,80.0,71,80,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.25),0.06508937501348555,80.0,80.0,71,80,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=1.0),0.048650374985300004,40.0,40.0,71,80,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.5),0.05639137502294034,53.0,53.0,71,80,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.25),0.06080758397001773,64.0,64.0,71,80,True,20251210_221925,data/easy,instance_000
+Reduction,0.04163824999704957,72.0,72.0,72,80,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=1.0),0.06528658396564424,80.0,80.0,72,80,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.5),0.06518420798238367,80.0,80.0,72,80,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.25),0.06571141700260341,80.0,80.0,72,80,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=1.0),0.04996704205404967,40.0,40.0,72,80,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.5),0.05660191609058529,53.0,53.0,72,80,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.25),0.062075708992779255,64.0,64.0,72,80,True,20251210_221925,data/easy,instance_001
+Reduction,0.04127912502735853,73.0,73.0,73,80,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=1.0),0.06516366708092391,80.0,80.0,73,80,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.5),0.06505604193080217,80.0,80.0,73,80,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.25),0.06483733409550041,80.0,80.0,73,80,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=1.0),0.04838387493509799,40.0,40.0,73,80,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.5),0.05719916697125882,53.0,53.0,73,80,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.25),0.06281766702886671,64.0,64.0,73,80,True,20251210_221925,data/easy,instance_002
+Reduction,0.04476458299905062,74.0,74.0,74,80,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=1.0),0.06995479192119092,80.0,80.0,74,80,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.5),0.06980333407409489,80.0,80.0,74,80,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.25),0.06852458301000297,80.0,80.0,74,80,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=1.0),0.050100125023163855,40.0,40.0,74,80,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.5),0.05655924999155104,53.0,53.0,74,80,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.25),0.06118337495718151,64.0,64.0,74,80,True,20251210_221925,data/easy,instance_003
+Reduction,0.04140224994625896,75.0,75.0,75,80,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=1.0),0.06599970895331353,80.0,80.0,75,80,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.5),0.06764970894437283,80.0,80.0,75,80,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.25),0.06774049997329712,80.0,80.0,75,80,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=1.0),0.050556792062707245,40.0,40.0,75,80,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.5),0.056929999962449074,53.0,53.0,75,80,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.25),0.06074975000228733,64.0,64.0,75,80,True,20251210_221925,data/easy,instance_004
+Reduction,0.04114508396014571,76.0,76.0,76,80,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=1.0),0.06522066704928875,80.0,80.0,76,80,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.5),0.06451266596559435,80.0,80.0,76,80,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.25),0.06827745900955051,80.0,80.0,76,80,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=1.0),0.04886391700711101,40.0,40.0,76,80,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.5),0.05744708294514567,53.0,53.0,76,80,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.25),0.06092562503181398,64.0,64.0,76,80,True,20251210_221925,data/easy,instance_005
+Reduction,0.04182966600637883,77.0,77.0,77,80,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=1.0),0.06687608303036541,80.0,80.0,77,80,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.5),0.06701875000726432,80.0,80.0,77,80,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.25),0.06642191694118083,80.0,80.0,77,80,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=1.0),0.04844545794185251,40.0,40.0,77,80,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.5),0.05624808301217854,53.0,53.0,77,80,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.25),0.060497333062812686,64.0,64.0,77,80,True,20251210_221925,data/easy,instance_006
+Reduction,0.04273637500591576,78.0,78.0,78,80,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=1.0),0.06682362500578165,80.0,80.0,78,80,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.5),0.06495662499219179,80.0,80.0,78,80,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.25),0.09455379191786051,80.0,80.0,78,80,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=1.0),0.05269733304157853,40.0,40.0,78,80,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.5),0.059377166093327105,53.0,53.0,78,80,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.25),0.061381832929328084,64.0,64.0,78,80,True,20251210_221925,data/easy,instance_007
+Reduction,0.042953249998390675,79.0,79.0,79,80,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=1.0),0.06587408308405429,80.0,80.0,79,80,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.5),0.06502300000283867,80.0,80.0,79,80,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.25),0.06623754103202373,80.0,80.0,79,80,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=1.0),0.050013166037388146,40.0,40.0,79,80,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.5),0.05736049998085946,53.0,53.0,79,80,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.25),0.06248275004327297,64.0,64.0,79,80,True,20251210_221925,data/easy,instance_008
+Reduction,0.042407458066008985,80.0,80.0,80,80,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=1.0),0.06757762504275888,80.0,80.0,80,80,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.5),0.06767287501133978,80.0,80.0,80,80,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.25),0.06692541693337262,80.0,80.0,80,80,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=1.0),0.0498485000571236,40.0,40.0,80,80,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.5),0.05702850001398474,53.0,53.0,80,80,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.25),0.06076629098970443,64.0,64.0,80,80,True,20251210_221925,data/easy,instance_009
+Reduction,0.05259112501516938,81.0,81.0,81,90,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=1.0),0.08342195802833885,90.0,90.0,81,90,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.5),0.08313062507659197,90.0,90.0,81,90,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.25),0.08286495797801763,90.0,90.0,81,90,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=1.0),0.06165120902005583,45.0,45.0,81,90,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.5),0.07173700002022088,60.0,60.0,81,90,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.25),0.07734866603277624,72.0,72.0,81,90,True,20251210_221925,data/easy,instance_000
+Reduction,0.053261667024344206,82.0,82.0,82,90,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=1.0),0.08447087497916073,90.0,90.0,82,90,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.5),0.08288720902055502,90.0,90.0,82,90,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.25),0.08265287498943508,90.0,90.0,82,90,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=1.0),0.0614721670281142,45.0,45.0,82,90,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.5),0.07231237506493926,60.0,60.0,82,90,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.25),0.07725433295127004,72.0,72.0,82,90,True,20251210_221925,data/easy,instance_001
+Reduction,0.05220866703893989,83.0,83.0,83,90,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=1.0),0.08370374992955476,90.0,90.0,83,90,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.5),0.08460816694423556,90.0,90.0,83,90,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.25),0.08280450000893325,90.0,90.0,83,90,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=1.0),0.061559958034195006,45.0,45.0,83,90,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.5),0.07143999997060746,59.0,59.0,83,90,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.25),0.07740562502294779,72.0,72.0,83,90,True,20251210_221925,data/easy,instance_002
+Reduction,0.052214583032764494,84.0,84.0,84,90,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=1.0),0.08281333395279944,90.0,90.0,84,90,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.5),0.082379832980223,90.0,90.0,84,90,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.25),0.08228812494780868,90.0,90.0,84,90,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=1.0),0.061696749995462596,45.0,45.0,84,90,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.5),0.073183250031434,60.0,60.0,84,90,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.25),0.07777729199733585,72.0,72.0,84,90,True,20251210_221925,data/easy,instance_003
+Reduction,0.05246216699015349,85.0,85.0,85,90,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=1.0),0.08288808295037597,90.0,90.0,85,90,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.5),0.08258912502788007,90.0,90.0,85,90,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.25),0.08242591598536819,90.0,90.0,85,90,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=1.0),0.06173549999948591,45.0,45.0,85,90,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.5),0.07117187499534339,60.0,60.0,85,90,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.25),0.080121458042413,72.0,72.0,85,90,True,20251210_221925,data/easy,instance_004
+Reduction,0.05379483301658183,86.0,86.0,86,90,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=1.0),0.08546774997375906,90.0,90.0,86,90,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.5),0.08427350001875311,90.0,90.0,86,90,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.25),0.08397070795763284,90.0,90.0,86,90,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=1.0),0.0624987919582054,45.0,45.0,86,90,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.5),0.07184620795305818,60.0,60.0,86,90,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.25),0.0812781669665128,72.0,72.0,86,90,True,20251210_221925,data/easy,instance_005
+Reduction,0.05400616698898375,87.0,87.0,87,90,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=1.0),0.08312587509863079,90.0,90.0,87,90,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.5),0.08438987494446337,90.0,90.0,87,90,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.25),0.08267608296591789,90.0,90.0,87,90,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=1.0),0.06265633401926607,45.0,45.0,87,90,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.5),0.07141279196366668,60.0,60.0,87,90,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.25),0.07716512505430728,72.0,72.0,87,90,True,20251210_221925,data/easy,instance_006
+Reduction,0.05269970803055912,88.0,88.0,88,90,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=1.0),0.08467800007201731,90.0,90.0,88,90,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.5),0.08268245798535645,90.0,90.0,88,90,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.25),0.08594583300873637,90.0,90.0,88,90,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=1.0),0.06247137498576194,45.0,45.0,88,90,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.5),0.07215074996929616,60.0,60.0,88,90,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.25),0.07791070803068578,72.0,72.0,88,90,True,20251210_221925,data/easy,instance_007
+Reduction,0.053133083041757345,89.0,89.0,89,90,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=1.0),0.08305787504650652,90.0,90.0,89,90,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.5),0.08280375006143004,90.0,90.0,89,90,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.25),0.082680374966003,90.0,90.0,89,90,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=1.0),0.061946083907969296,45.0,45.0,89,90,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.5),0.07376729196403176,60.0,60.0,89,90,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.25),0.0784540829481557,72.0,72.0,89,90,True,20251210_221925,data/easy,instance_008
+Reduction,0.053907499997876585,90.0,90.0,90,90,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=1.0),0.08363312506116927,90.0,90.0,90,90,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.5),0.08485979202669114,90.0,90.0,90,90,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.25),0.08291354204993695,90.0,90.0,90,90,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=1.0),0.06260162498801947,45.0,45.0,90,90,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.5),0.0720469169318676,60.0,60.0,90,90,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.25),0.07764499995391816,72.0,72.0,90,90,True,20251210_221925,data/easy,instance_009
+Reduction,0.06759420793969184,91.0,91.0,91,100,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=1.0),0.10695445793680847,100.0,100.0,91,100,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.5),0.10840454197023064,100.0,100.0,91,100,True,20251210_221925,data/easy,instance_000
+Approximation ($\epsilon$=0.25),0.10688320791814476,100.0,100.0,91,100,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=1.0),0.07678258302621543,50.0,50.0,91,100,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.5),0.09235449996776879,66.0,66.0,91,100,True,20251210_221925,data/easy,instance_000
+Feasible Heuristic ($\epsilon$=0.25),0.0996748749166727,80.0,80.0,91,100,True,20251210_221925,data/easy,instance_000
+Reduction,0.06719295808579773,92.0,92.0,92,100,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=1.0),0.10653641598764807,100.0,100.0,92,100,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.5),0.10661004204303026,100.0,100.0,92,100,True,20251210_221925,data/easy,instance_001
+Approximation ($\epsilon$=0.25),0.10748566698748618,100.0,100.0,92,100,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=1.0),0.07735079200938344,50.0,50.0,92,100,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.5),0.09344870795030147,66.0,66.0,92,100,True,20251210_221925,data/easy,instance_001
+Feasible Heuristic ($\epsilon$=0.25),0.10213245800696313,80.0,80.0,92,100,True,20251210_221925,data/easy,instance_001
+Reduction,0.06791437498759478,93.0,93.0,93,100,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=1.0),0.10705279198009521,100.0,100.0,93,100,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.5),0.10758062498643994,100.0,100.0,93,100,True,20251210_221925,data/easy,instance_002
+Approximation ($\epsilon$=0.25),0.1069878339767456,100.0,100.0,93,100,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=1.0),0.07771862496156245,50.0,50.0,93,100,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.5),0.09449275000952184,66.0,66.0,93,100,True,20251210_221925,data/easy,instance_002
+Feasible Heuristic ($\epsilon$=0.25),0.10059225000441074,80.0,80.0,93,100,True,20251210_221925,data/easy,instance_002
+Reduction,0.06741633301135153,94.0,94.0,94,100,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=1.0),0.10680537496227771,100.0,100.0,94,100,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.5),0.10725633299443871,100.0,100.0,94,100,True,20251210_221925,data/easy,instance_003
+Approximation ($\epsilon$=0.25),0.11191474995575845,100.0,100.0,94,100,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=1.0),0.07669466699007899,50.0,50.0,94,100,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.5),0.0923660829430446,66.0,66.0,94,100,True,20251210_221925,data/easy,instance_003
+Feasible Heuristic ($\epsilon$=0.25),0.09988691692706198,80.0,80.0,94,100,True,20251210_221925,data/easy,instance_003
+Reduction,0.0678214579820633,95.0,95.0,95,100,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=1.0),0.10921599995344877,100.0,100.0,95,100,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.5),0.10936470807064325,100.0,100.0,95,100,True,20251210_221925,data/easy,instance_004
+Approximation ($\epsilon$=0.25),0.11250645900145173,100.0,100.0,95,100,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=1.0),0.0843862920301035,50.0,50.0,95,100,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.5),0.10154225002042949,66.0,66.0,95,100,True,20251210_221925,data/easy,instance_004
+Feasible Heuristic ($\epsilon$=0.25),0.10796583304181695,80.0,80.0,95,100,True,20251210_221925,data/easy,instance_004
+Reduction,0.07237954100128263,96.0,96.0,96,100,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=1.0),0.10996066592633724,100.0,100.0,96,100,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.5),0.1089374580187723,100.0,100.0,96,100,True,20251210_221925,data/easy,instance_005
+Approximation ($\epsilon$=0.25),0.10930195893160999,100.0,100.0,96,100,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=1.0),0.07722908293362707,50.0,50.0,96,100,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.5),0.09420733305159956,66.0,66.0,96,100,True,20251210_221925,data/easy,instance_005
+Feasible Heuristic ($\epsilon$=0.25),0.10049733403138816,80.0,80.0,96,100,True,20251210_221925,data/easy,instance_005
+Reduction,0.06898583297152072,97.0,97.0,97,100,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=1.0),0.10692658298648894,100.0,100.0,97,100,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.5),0.10669662500731647,100.0,100.0,97,100,True,20251210_221925,data/easy,instance_006
+Approximation ($\epsilon$=0.25),0.10847895895130932,100.0,100.0,97,100,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=1.0),0.07690329104661942,50.0,50.0,97,100,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.5),0.09331158304121345,66.0,66.0,97,100,True,20251210_221925,data/easy,instance_006
+Feasible Heuristic ($\epsilon$=0.25),0.10052104201167822,80.0,80.0,97,100,True,20251210_221925,data/easy,instance_006
+Reduction,0.06901129195466638,98.0,98.0,98,100,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=1.0),0.11052137496881187,100.0,100.0,98,100,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.5),0.10699637501966208,100.0,100.0,98,100,True,20251210_221925,data/easy,instance_007
+Approximation ($\epsilon$=0.25),0.10692099994048476,100.0,100.0,98,100,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=1.0),0.07670370803680271,50.0,50.0,98,100,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.5),0.09319799998775125,66.0,66.0,98,100,True,20251210_221925,data/easy,instance_007
+Feasible Heuristic ($\epsilon$=0.25),0.10101620806381106,80.0,80.0,98,100,True,20251210_221925,data/easy,instance_007
+Reduction,0.06839154195040464,99.0,99.0,99,100,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=1.0),0.10705608304124326,100.0,100.0,99,100,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.5),0.10675575002096593,100.0,100.0,99,100,True,20251210_221925,data/easy,instance_008
+Approximation ($\epsilon$=0.25),0.10667366697452962,100.0,100.0,99,100,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=1.0),0.07684462505858392,50.0,50.0,99,100,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.5),0.09350537497084588,66.0,66.0,99,100,True,20251210_221925,data/easy,instance_008
+Feasible Heuristic ($\epsilon$=0.25),0.1005392080405727,80.0,80.0,99,100,True,20251210_221925,data/easy,instance_008
+Reduction,0.07039599993731827,100.0,100.0,100,100,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=1.0),0.10774983302690089,100.0,100.0,100,100,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.5),0.10720912495162338,100.0,100.0,100,100,True,20251210_221925,data/easy,instance_009
+Approximation ($\epsilon$=0.25),0.10673070803750306,100.0,100.0,100,100,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=1.0),0.07688204094301909,50.0,50.0,100,100,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.5),0.0927022909745574,66.0,66.0,100,100,True,20251210_221925,data/easy,instance_009
+Feasible Heuristic ($\epsilon$=0.25),0.10148933401796967,80.0,80.0,100,100,True,20251210_221925,data/easy,instance_009

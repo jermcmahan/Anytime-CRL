@@ -30,7 +30,7 @@ class ACMDP:
     rewards: np.ndarray      # Shape: (S, A)
     costs: np.ndarray        # Shape: (S, A)
     transitions: Union[np.ndarray, List[sp.csr_array]]  # Shape: (A, S, S)
-    budget: int
+    budget: float
     start: int
 
     @property
@@ -140,7 +140,7 @@ class ACMDPSolver(ABC):
         end_time = time.perf_counter()
 
         # For non-negative rewards, a negative value implies infeasibility
-        success = bool(value >= 0)
+        success = bool(value > -np.max(np.abs(env.rewards)))
 
         return SolverResult(
             algorithm_name=self.name,

@@ -8,6 +8,7 @@ Includes:
 """
 
 from typing import Tuple, Dict, Any
+from collections import deque
 
 import numpy as np
 import scipy.sparse as sp
@@ -30,7 +31,7 @@ class ReductionSolver(ACMDPSolver):
 
     def _solve_impl(self, env: ACMDP) -> Tuple[np.ndarray, float, float, Dict[str, Any]]:
         # 1. Construct the augmented MDP
-        aug_env = self._augment(env)
+        aug_env, state_map = self._augment(env)
 
         # 2. Solve the augmented MDP (Sparse) 
         S_aug = aug_env.states_size
@@ -59,98 +60,117 @@ class ReductionSolver(ACMDPSolver):
         # 3. Compute metadata
         optimal_value = V_future[aug_env.start]
         worst_case_cost = self._policy_cost(aug_env, policy)
-        solver_info = {'aug_env': aug_env}
+        solver_info = {'aug_env': aug_env, 'state_map': state_map}
 
         return policy, optimal_value, worst_case_cost, solver_info
 
-    def _augment(self, env: ACMDP) -> ACMDP:
+    def _augment(self, env: ACMDP) -> Tuple[ACMDP, Dict]:
         """
-        Computes the (sparse) cost-augmented MDP representation. Also, computes a 
-        modified cost function to be used in the _policy_cost helper method.
+        Computes the (sparse) cost-augmented MDP representation.
 
         Args:
             env: the original Anytime-CMDP instance
 
         Returns:
             An ACMDP instance containing the cost-augmented MDP with sparse transitions
-            and the augmented cost function
+            and the augmented cost function, and a dictionary that maps raw augmented
+            states to their index form
         """
         S = env.states_size
         A = env.actions_size
         B = env.budget
 
-        # A state for every (state, cost)-pair
-        C_size = B + 1
-        aug_S =  S * C_size
+        # --- 1. Augmented State Space Construction ---
+        # BFS-style enumeration of all realizable (s,c)-pairs
+        # Maps (s, cost) -> the first time this pair is encountered,
+        # (i.e. its index in order of the enumeration)
+        
+        # Agent starts at s_0 with 0 cost accumulated
+        state_map = {(env.start, 0.0): 0}
 
-        # 1. Create augmented reward and cost functions
-        # r_aug((s,c),a) = r(s,a), unless c + c(s,a) > B, then -penalty
-        penalty = np.sum(np.abs(env.rewards)) * env.horizon + 1
-        aug_rewards = np.zeros((aug_S, A))
+        # Compute rewards, costs, and transitions as we go
+        penalty = np.max(np.abs(env.rewards)) * (env.horizon + 1)
+        rewards_list = []
+        costs_list = []
+        transitions_list = [([], [], []) for _ in range(A)]
 
-        for s in range(S):
+        # Queue for BFS: (s, cost, h, idx) entries maintained
+        queue = deque([(env.start, 0.0, 0, 0)])
+        
+        # We process layer by layer to avoid cycles 
+        while queue:
+            s, c, h, idx = queue.popleft()
+            
             for a in range(A):
-                # Find smallest starting c that will cause violation
-                c_over = max(B - int(env.costs[s,a]) + 1, 0)
-                aug_rewards[s*C_size + c_over: (s+1) * C_size, a] = -penalty
-                aug_rewards[s*C_size: s*C_size + c_over, a] = env.rewards[s,a]
+                next_c = c + env.costs[s,a]
 
-        # c((s,c),a) = c(s,a)
-        aug_costs = np.zeros((aug_S, A))
-        for s in range(S):
-            aug_costs[s * C_size: (s+1) * C_size] = env.costs[s]
+                # 1. --- Augmented Rewards and Costs ---
+                # If c + c(s,a) > B, apply penalty
+                if next_c > B:
+                    next_c = B               # Truncate to B
+                    rewards_list.append(-penalty)
+                else:
+                    # r_aug((s,c),a) = r(s,a)
+                    rewards_list.append(env.rewards[s,a])
 
-        # 2. Create augmented transitions (Sparse)
+                # c_aug((s,c),a) = c(s,a)
+                costs_list.append(env.costs[s,a])
+
+                # 2. --- Augmented Transitions and States ---
+                rows, cols, data = transitions_list[a]
+
+                # Stop expanding if we hit the horizon, add self-loops instead
+                if h >= env.horizon:
+                    rows.append(idx)
+                    cols.append(idx)
+                    data.append(1.0)
+                    continue
+                
+                for next_s in np.where(env.transitions[a, s] > 0)[0]:
+                    next_state = (next_s, next_c)
+                    
+                    if next_state not in state_map:
+                        # Identify augmented states with the time they were found
+                        next_idx = len(state_map)
+                        state_map[next_state] = next_idx
+                        queue.append((next_s, next_c, h + 1, next_idx))
+                    else:
+                        next_idx = state_map[next_state]
+
+                    # Update transitions csr format
+                    rows.append(idx)
+                    cols.append(next_idx)
+                    data.append(env.transitions[a, s, next_s])
+
+        aug_S = len(state_map) # total number of augmented states
+
+        # Convert lists to arrays
+        aug_rewards = np.array(rewards_list).reshape((aug_S, A))
+        aug_costs = np.array(costs_list).reshape((aug_S, A))
         aug_transitions = []
-        c_range = np.arange(B+1)
 
         for a in range(A):
-            all_rows = []
-            all_cols = []
-            all_data = []
+            rows, cols, data = transitions_list[a]
 
-            for s in range(S):
-                s_next = np.where(env.transitions[a,s] > 0)[0]
-                next_cs = c_range + int(env.costs[s, a])
-                
-                # Any cost > B maps to state index B
-                next_cs[next_cs > B] = B
-                
-                # Calculate Source Indices: (s, 0), (s, 1), ..., (s, B)
-                current_aug_indices = s * C_size + c_range
-
-                for sn in s_next:
-                    next_aug_indices = sn * C_size + next_cs
-                    
-                    # Store the batch
-                    all_rows.append(current_aug_indices)
-                    all_cols.append(next_aug_indices)
-                    all_data.append(np.full(C_size, env.transitions[a,s,sn]))
-
-            # Concatenate the lists into flat arrays for SciPy
-            rows_flat = np.concatenate(all_rows)
-            cols_flat = np.concatenate(all_cols)
-            data_flat = np.concatenate(all_data)
-            
-            # Sparse matrix construction
-            sparse_mat = sp.csr_array(
-                (data_flat, (rows_flat, cols_flat)), 
-                shape=(aug_S, aug_S)
+            aug_transitions.append(sp.csr_array(
+                    (data, (rows, cols)), 
+                    shape=(aug_S, aug_S),
+                )
             )
-            
-            aug_transitions.append(sparse_mat)
 
-        # 3. Create augmented start state
-        aug_start = env.start * C_size
+        # --- 4. Augmented Start State Construction ---
+        aug_start = 0 # (env.start, 0)
 
-        return ACMDP(
+        return (ACMDP(
                 horizon=env.horizon,
                 rewards=aug_rewards,
                 costs=aug_costs,
                 transitions=aug_transitions,
                 budget=B,
                 start=aug_start,
-            )
+            ),
+            state_map,
+        )
 
     def _policy_cost(self, env: ACMDP, policy: np.ndarray) -> float:
         """
@@ -244,16 +264,14 @@ class ApproxSolver(ReductionSolver):
 
         # 3. Create unscaled augmented environment for policy cost computation
         scaled_aug_env = parent_info['aug_env']
-
-        # Number of (s,c)-pairs for each s
-        C_size = scaled_aug_env.states_size // env.states_size
+        state_map = parent_info['state_map'] 
         
         # Unscale the costs and budget
         aug_budget = env.budget
         aug_costs = np.zeros(scaled_aug_env.costs.shape)
 
-        for s in range(env.states_size):
-            aug_costs[s * C_size: (s+1) * C_size] = env.costs[s]
+        for (s,c), i in state_map.items():
+            aug_costs[i,:] = env.costs[s,:]
 
         aug_env = ACMDP(
                 horizon=scaled_aug_env.horizon,
@@ -266,8 +284,9 @@ class ApproxSolver(ReductionSolver):
 
         # 4. Calculate the policy's true anytime cost
         actual_cost = super()._policy_cost(aug_env, policy)
+        solver_info = {'aug_env': aug_env, 'state_map': state_map}
 
-        return policy, value, actual_cost, {'aug_env': aug_env}
+        return policy, value, actual_cost, solver_info
 
 class FeasibleSolver(ApproxSolver):
     """
