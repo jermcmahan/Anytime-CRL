@@ -1,18 +1,20 @@
 # Anytime-Constrained Reinforcement Learning
 
-The companion code to the AISTATs paper [Anytime-Constrained Reinforcement Learning](https://proceedings.mlr.press/v238/mcmahan24a). This repository implements a high-performance framework for solving Anytime-Constrained Markov Decision Processes (ACMDPs). We include a general toolkit for working with ACMDPs, and conduct experiments to verify their theoretical guarantees and to compare the scalability of our methods.
+The companion code to the AISTATs paper [Anytime-Constrained Reinforcement Learning](https://proceedings.mlr.press/v238/mcmahan24a). This repository implements a high-performance framework for solving Anytime-Constrained Markov Decision Processes (ACMDPs). We include a general toolkit for working with ACMDPs, including model-based solvers and gymnasium wrappers, and run benchmarking experiments on classic knapsack datasets to verify their theoretical guarantees.
 
 ## 🌟 Key Features
 
-* **Robust Pipeline:** Includes modules for synthetic data generation (Best-Case, Worst-Case, and Average Case Instances), analytical verification, and automated benchmarking.
+* **Robust Pipeline:** Includes modules for synthetic data generation (Best-Case, Worst-Case, and Average Case Instances), infinite streams for learning, and automated benchmarking.
 
 * **Algorithmic Suite:**
 
-    * Reduction Solver: An exact, pseudo-polynomial time solver using specialized state augmentation. Allows rational and negative costs!
+    * **Reduction Solver:** An exact, pseudo-polynomial time solver using specialized state augmentation. Allows rational and negative costs!
 
-    * Approximation Solver: A bicriteria (0,1+ϵ)-approximation algorithm that guarantees value optimality while bounding cost violation.
+    * **Approximation Solver:** A bicriteria (0,1+ϵ)-approximation algorithm that guarantees value optimality while bounding cost violation.
 
-    * Feasibility Heuristic: A strict feasibility solver that scales the budget to ensure constraints are met, while empirically achieving high value.
+    * **Feasibility Heuristic:** A strict feasibility solver that scales the budget to ensure constraints are met, while empirically achieving high value.
+
+    * **Anytime-Constraint Wrapper:** A gymnasium wrapper that transforms *any* standard MDP into a constrained environment via robust action masking and budget tracking.
 
 * **Sparse Matrix Optimization:** Uses scipy.sparse (CSR) alongside a custom vectorized backward induction algorithm to handle augmented state spaces with millions of nodes. 
 
@@ -20,29 +22,26 @@ The companion code to the AISTATs paper [Anytime-Constrained Reinforcement Learn
 
 ```
 Anytime-CRL/
-├── data/                   # Generated datasets
-│   ├── easy/
-│   ├── hard/
-│   └── random/
+├── data/                    # Generated datasets
+│   ├── benchmark/           # Instances for Benchmarking
+│   └── validation/          # Instances for RL validation
+├── src/                     # Core Library
+│   ├── rl/                  # RL Environment and Curriculum
+│   ├── algorithms.py        # Solver implementations
+│   ├── instances.py         # Data generation logic
+│   ├── solver.py            # Abstract Base Class & Contracts
+│   └── plotting.py          # Visualization library
+├── scripts/                 # CLI Entry points
+│   ├── generate_datasets.py # Dataset creation
+│   ├── run_benchmark.py     # Benchmark execution
+│   └── train_agent.py       # RL training
 ├── notebooks/
-│   └── visualization.ipynb # Interactive plotting dashboard
-├── results/                # Experiment logs and saved plots
-│   ├── easy/
-│   ├── hard/
-│   ├── random/
-│   └── plots/
-├── scripts/                # CLI Entry points
-│   ├── generate_data.py    # Dataset creation
-│   ├── run_experiment.py   # Benchmark execution
-│   └── verify_algos.py     # Theoretical Guarantees tests
-├── src/                    # Core Library
-│   ├── algorithms.py       # Solver implementations
-│   ├── generator.py        # Data generation logic
-│   ├── solver.py           # Abstract Base Class & Contracts
-│   ├── verification.py     # Instance and Solver Checks
-│   └── plotting.py         # Visualization library
-├── run_all.sh              # Run all experiments script
-└── requirements.txt        # Dependencies
+│   └── visualization.ipynb  # Interactive plotting dashboard
+├── results/                 # Experiment logs and saved plots
+│   ├── benchmark_*.csv      # Summary of Benchmarking results
+│   ├── models/              # RL trained models
+│   └── plots/               # Visualizations of Benchmarking 
+└── requirements.txt         # Dependencies
 ```
 
 ## 🚀 Quick Start
@@ -58,36 +57,33 @@ pip install -r requirements.txt
 
 ### 2. Data Generation
 
-Generate the synthetic datasets.
+1. Generate the larger benchmarking datasets in data/benchmark
 
 ```
 Bash
-# Generate small validation sets and large random sets (up to H=100)
-python -m scripts.generate_data
+python -m scripts.generate_datasets
 ```
 
-### 3. Validation (Unit Testing)
-
-Before running experiments, verify the solvers against analytical ground truths to ensure correctness.
+2. Generate the smaller validation datasets in data/validation
 
 ```
 Bash
-python -m scripts.verify_algos
-Expected Output: [SUCCESS] All tests passed.
+python -m scripts.generate_datasets --min_n 20 --step_n 20 --n_samples 5
+--out data/validation
 ```
 
-### 4. Run Benchmark
+### 3. Run Benchmark
 
 Run the solvers on the generated data. This script uses incremental saving to protect against crashes.
 
 ```
 Bash
-python -m scripts.run_experiment
+python -m scripts.run_benchmark
 ```
 
-Alternatively use the provided script "run_all.sh"
+**Optionally:** run scripts.train_agent or use our default trained PPO model.
 
-### 5. Analytics Visualization
+### 4. Visualization
 
 Open notebooks/visualization.ipynb to generate the plots. The notebook will automatically find the latest CSV in results/ and produce:
 
@@ -97,27 +93,26 @@ Open notebooks/visualization.ipynb to generate the plots. The notebook will auto
 
 * Value Analysis: Comparison of achieved value to optimal or approximate lower bound.
 
-## 📦 Dataset Criteria
-Our data set mimics the knapsack-like NP-hard ACMDPs appearing in the paper. Formally, each instance is an ACMDP equivalent of a knapsack instance with varying properties.
+The notebook also includes the expected behavior and conclusions.
 
-* **Easy:** Linear correlation (Costs=1, Rewards=1) to ensure minimal blow-up in the augmented states (quadratic), allowing fast solutions. Gives Best-Case performance.
-* **Hard:** Increasing powers of two costs and rewards to ensure maximum blow-up in the augmented states (exponential) to stress solvers. Gives Worst-Case performance.
-* **Random:** Uniformly Random costs and rewards for Average-Case performance.
+## 📦 Benchmark Dataset
+Our data set mimics the knapsack-like NP-hard ACMDPs appearing in the paper. Formally, each instance is an ACMDP equivalent of a knapsack instance with varying properties. The specific knapsack instances used are classical benchmarks as implemented in the repository [Knapsack-Approximation](https://github.com/jermcmahan/Knapsack-Approximation).
 
 ## 🧠 Algorithms Implemented
 
-| Algorithm             | Type       | Time Complexity   |
-| :-------------------- | :--------- | :---------------- |
-| Reduction             | Optimal    | Pseudo-Polynomial |
-| Approximation         | Bicriteria | Polynomial        |
-| Feasibility Heuristic | Heuristic  | Polynomial        |
+| Algorithm             | Type       | Time Complexity     |
+| :-------------------- | :--------- | :------------------ |
+| Reduction             | Optimal    | Pseudo-Polynomial   |
+| Approximation         | Bicriteria | Polynomial          |
+| Feasibility Heuristic | Heuristic  | Polynomial          |
+| PPO w/ action-masking | Heuristic  | Poly-time Inference |
 
 ## 📊 Reproducibility
 To reproduce the exact charts found in the report:
 
-1. Run the full generation pipeline: python -m scripts.generate_data
+1. Run the full generation pipeline
 
-2. Run the experiment suite: ./run_all.sh
+2. Run the experiment suite
 
 3. Execute the cells in notebooks/visualization.ipynb
 
@@ -126,5 +121,5 @@ If you use this code for your research, please cite:
 
 ```
 Jeremy McMahan. (2025). Anytime-Constrained Reinforcement Learning. 
-GitHub Repository. [https://github.com/jermcmahan/Anytime-CRL](https://github.com/jermcmahan/Anytime-CRL)
+GitHub Repository: https://github.com/jermcmahan/Anytime-CRL
 ```

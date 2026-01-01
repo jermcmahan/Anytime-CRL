@@ -1,15 +1,23 @@
-# Core Math & Logic
-numpy>=1.24.0
-pandas>=2.0.0
+# --- Core Math & Data ---
+numpy>=1.21.0
+pandas>=1.3.0
 scipy>=1.8.0
 
-# Visualization
-matplotlib>=3.7.0
-seaborn>=0.12.0
+# --- Visualization ---
+matplotlib>=3.4.0
+seaborn>=0.11.0
 
-# Progress Bars & Utilities
-tqdm>=4.65.0
-
-# Development / Notebooks
-jupyterlab>=4.0.0
+# --- Development Tools ---
+tqdm>=4.60.0
+jupyterlab>=3.0.0
 ipykernel>=6.0.0
+
+# --- Reinforcement Learning ---
+torch>=1.11.0
+gymnasium>=0.28.1
+
+# Core PPO algorithms
+stable-baselines3>=2.0.0
+
+# Required for Action Masking (MaskablePPO)
+sb3-contrib>=2.0.0

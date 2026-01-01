@@ -91,7 +91,6 @@ class SolverResult:
         value: The expected value of the policy.
         cost: The worst-case cost of the policy.
         budget: The capacity constraint provided.
-        success: Whether a policy was found.
         runtime: Execution time in seconds.
         solver_info: Solver specific info for policy evaluation.
     """
@@ -100,7 +99,6 @@ class SolverResult:
     value: float
     cost: float
     budget: int
-    success: bool
     runtime: float
     solver_info: dict
 
@@ -139,16 +137,12 @@ class ACMDPSolver(ABC):
         
         end_time = time.perf_counter()
 
-        # For non-negative rewards, a negative value implies infeasibility
-        success = bool(value > -np.max(np.abs(env.rewards)))
-
         return SolverResult(
             algorithm_name=self.name,
             policy=policy,
             value=value,
             cost=cost,
             budget=env.budget,
-            success=success,
             runtime=end_time - start_time,
             solver_info=solver_info,
         )

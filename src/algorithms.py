@@ -5,6 +5,7 @@ Includes:
 - Reduction to Standard Backward Induction (Exact, Pseudo-Polynomial Time)
 - Bicriteria, (0,epsilon)-relative (Approximation, Polynomial Time)
 - Feasibility Guaranteeing Heuristic (Heuristic, Polynomial Time)
+- Reinforcement Learning (Heuristic, Polynomial Time Inference) 
 """
 
 from typing import Tuple, Dict, Any
@@ -12,6 +13,18 @@ from collections import deque
 
 import numpy as np
 import scipy.sparse as sp
+
+# --- Optional Imports for RL Solver ---
+# This prevents the script from crashing if ML libraries are missing
+try:
+    import torch
+    from sb3_contrib import MaskablePPO
+    from sb3_contrib.common.wrappers import ActionMasker
+    from src.rl.knapsack_env import KnapsackBaseEnv
+    from src.rl.anytime_wrapper import AnytimeWrapper
+    _RL_AVAILABLE = True
+except ImportError:
+    _RL_AVAILABLE = False
 
 from .solver import ACMDP, ACMDPSolver
 
@@ -320,5 +333,85 @@ class FeasibleSolver(ApproxSolver):
             )
 
         return super()._solve_impl(reduced_env)
+
+
+class RLSolver(ACMDPSolver):
+    """
+    Solves Knapscak ACMDP instances using a pre-trained Reinforcement Learning policy.
+    
+    1. Accepts an 'ACMDP' object (Matrix format).
+    2. Extracts the raw arrays (Values/Weights) from the matrix.
+    3. Injects them into 'KnapsackBaseEnv'.
+    4. Runs the PPO model to produce a solution trajectory.
+    """
+
+    def __init__(self, model_path: str, max_n: int, device: str = "auto"):
+        # Check if optional dependencies were imported successfully
+        if not _RL_AVAILABLE:
+            raise ImportError(
+                "RLSolver requires 'torch' and 'sb3_contrib'. "
+                "Please install them to use this solver."
+            )
+
+        self.model_path = model_path
+        self.max_n = max_n
+        
+        # 1. Load the Agent
+        try:
+            self.model = MaskablePPO.load(model_path, device=device)
+        except Exception as e:
+            raise RuntimeError(f"Failed to load model from {model_path}: {e}")
+
+        # 2. Fixed-instance generator that always outputs the current problem
+        self._current_problem = None
+        
+        def _gen(rng):
+            if self._current_problem is None:
+                raise RuntimeError("No problem instance injected!")
+            return self._current_problem
+
+        # 3. Initialize Environment
+        self.env = KnapsackBaseEnv(max_n=max_n, generator=_gen)
+        self.env = AnytimeWrapper(self.env,safe_actions_exist=True)
+        self.env = ActionMasker(self.env, lambda env: env.action_masks())
+
+    @property
+    def name(self) -> str:
+        return "RL Agent (PPO)"
+
+    def _solve_impl(self, env: ACMDP,
+    ) -> Tuple[np.ndarray, float, float, Dict[str, Any]]:
+        # Fixed-instance generator
+        values = env.rewards[:,1]
+        weights = env.costs[:,1]
+        budget = env.budget
+        self._current_problem = (values, weights, budget)
+
+        # Episode run
+        obs, _ = self.env.reset()
+        value = 0
+        weight = 0
+        solution = np.zeros(len(values), dtype=np.int8)
+        
+        for i in range(len(values)):
+            action, _ = self.model.predict(
+                obs, 
+                action_masks=self.env.action_masks(), 
+                deterministic=True
+            )
+
+            # If the item is chosen, update value and weight
+            if action == 1:
+                solution[i] = 1
+                value += values[i]
+                weight += weights[i]
+
+            # Move to next item
+            obs, _, _, _, _ = self.env.step(action)
+
+        return solution, value, weight, {}
+
+
+
 
     

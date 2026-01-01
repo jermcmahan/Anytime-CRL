@@ -1,0 +1,14 @@
+{
+    "min_n": 10,
+    "max_n_train": 100,
+    "max_n_pad": 100,
+    "steps": 1000000,
+    "lr": 0.0003,
+    "ent_coef": 0.01,
+    "gamma": 0.99,
+    "seed": 42,
+    "n_envs": 8,
+    "eval_data": "data/validation",
+    "patience": 10,
+    "model_dir": "results/models"
+}
